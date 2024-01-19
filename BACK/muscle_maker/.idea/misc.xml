@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48485399aacd71da7c4c96abd262a9f96cceb310ae59fd18fdfd77596739517e
-size 406
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK" />
+</project>

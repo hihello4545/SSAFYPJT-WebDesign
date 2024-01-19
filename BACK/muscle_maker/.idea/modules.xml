@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2be92373b1c3cfb1f0e68850f7cca0349acbfd5f1467e90b813013451e47180
-size 302
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/muscle_maker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/muscle_maker.main.iml" />
+    </modules>
+  </component>
+</project>
