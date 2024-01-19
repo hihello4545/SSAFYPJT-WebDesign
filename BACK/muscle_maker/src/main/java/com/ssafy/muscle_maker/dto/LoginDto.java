@@ -1,20 +1,3 @@
-package com.ssafy.muscle_maker.dto;
-
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
-import lombok.*;
-
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class LoginDto {
-    @NotNull
-    @Size(min = 3, max = 50)
-    private String emailId;
-
-    @NotNull
-    @Size(min = 3, max = 100)
-    private String password;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e87096ba34be3e2ccbe14aab146c73e144147557ed421558e0f0f4eaeddfb40
+size 379
