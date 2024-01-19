@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d928dc126ebe0d7a4d3224d3e74fba25951f396d932b1db01f4a095ebe11353c
-size 359
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.Getter;
+
+@Entity
+@Getter
+public class Tag {
+    @Id @ GeneratedValue
+    @Column(name = "tag_id")
+    Long id;
+
+
+    @Column(unique = true)
+    String tag;
+
+
+}
+
