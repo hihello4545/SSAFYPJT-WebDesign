@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0055ec9448ba856a54a5c8e6761d0d7b65060c333ec59f383681463f8e229290
-size 510
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Table(name = "Inbody")
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Inbody extends BaseTime{
+
+    @Id
+    @Column(name = "inbody_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long inbody_id;
+
+    private Float weight;
+
+    private Float muscle_mass;
+
+    private Float fat_mass;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+}
