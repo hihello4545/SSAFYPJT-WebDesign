@@ -1,20 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import lombok.Getter;
-
-@Entity
-@Getter
-public class IndiviualGoal {
-
-    @Id
-    @GeneratedValue
-    Long indiviualgoalId;
-
-    Long kg;
-    Long muscle;
-    Long fat;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc46c32e50131c3f0498172f889c2241de375b40cec5cf942d47f808129072dc
+size 508
