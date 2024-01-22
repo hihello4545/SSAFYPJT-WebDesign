@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85dd58bfeab802d5831381b0f113ab6bd1cc17b86e7dabbce4f6bcd56d3449d3
-size 500
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
+
+@Entity
+@Table(name = "basket")
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Basket extends BaseTime {
+
+    @Id
+    @Column(name = "basket_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long basketId;
+
+    @OneToOne(mappedBy = "basket")
+    private User user;
+
+    @OneToMany(mappedBy = "basket")
+    private List<Exercise> exercises;
+
+}

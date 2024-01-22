@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24bac774ccb6fb421a8cd4389e7c94a0d3f4cadde176f518aff7cbb17be43a14
-size 456
+package com.ssafy.muscle_maker.entity;
+import jakarta.persistence.*;
+import lombok.Getter;
+
+@Entity
+@Getter
+@Table(name = "feed_tag")
+public class FeedTag extends BaseTime {
+
+    @Id @GeneratedValue
+    @Column(name = "feed_tag_id")
+    private Long feedTagId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "feed_id")
+    private Feed feed;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "tag_id")
+    private Tag tag;
+
+
+}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a14a4a98d3e94761c37a5c10f11e75ee23ef75667c0c428e1ca20273074be61
-size 231
+package com.ssafy.muscle_maker.dto.users;
+
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+//Token 정보를 response할 때 사용할 클래스
+public class TokenDto {
+    private String token;
+}

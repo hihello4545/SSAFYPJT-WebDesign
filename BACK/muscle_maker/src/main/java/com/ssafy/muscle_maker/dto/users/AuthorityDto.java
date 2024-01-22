@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:592de6ea051001bb9d27afac4b8fd0db8d93d4b48bc769b947084aef17ec3e27
-size 323
+package com.ssafy.muscle_maker.dto.users;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class AuthorityDto {
+    private String authorityName;
+}

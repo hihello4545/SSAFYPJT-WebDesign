@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f763fb339c9f93d8e33e23a72e2a5e1027af72c384d88214286db82fa0d69614
-size 486
+package com.ssafy.muscle_maker.entity;
+import jakarta.persistence.*;
+import lombok.Getter;
+
+@Entity
+@Getter
+@Table(name = "indiviualgoals")
+public class IndiviualGoal {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "indiviualgoal_id")
+    private Long individualGoalId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id" )
+    private User user;
+
+
+    private Double kg;
+    private Double muscle;
+    private Double fat;
+
+
+}

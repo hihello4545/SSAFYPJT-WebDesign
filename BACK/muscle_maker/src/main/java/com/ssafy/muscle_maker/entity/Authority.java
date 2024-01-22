@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edc6c135b4366b906d577a7e700290e45c7469a0f9ee6c58ae8ccdcb82dc0059
-size 403
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.*;
+
+@Entity
+@Table(name = "authority")
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Authority {
+
+    @Id
+    @Column(name = "authority_name", length = 50)
+    private String authorityName;
+}
