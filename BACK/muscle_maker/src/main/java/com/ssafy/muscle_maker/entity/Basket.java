@@ -1,28 +1,3 @@
-package com.ssafy.muscle_maker.entity;
-
-import jakarta.persistence.*;
-import lombok.*;
-
-import java.util.List;
-
-@Entity
-@Table(name = "Basket")
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class Basket {
-
-    @Id
-    @Column(name = "basket_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long basket_id;
-
-    @OneToOne(mappedBy = "basket")
-    private User user;
-
-    @OneToMany(mappedBy = "basket")
-    private List<Exercise> exercises;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:55e8e2f0ed2c38e4ad4cb51fb77eddae31669cf95ae968a8180b7e6a8cd14905
+size 491
