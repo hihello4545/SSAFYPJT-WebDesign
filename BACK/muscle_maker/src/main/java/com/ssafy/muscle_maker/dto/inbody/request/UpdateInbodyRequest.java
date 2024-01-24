@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1520552e8725183dbc5e5188ef050d60d78a2d4ec68a77f659c7dcb2900149b
-size 264
+package com.ssafy.muscle_maker.dto.inbody.request;
+
+import lombok.*;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
+@Setter
+public class UpdateInbodyRequest {
+
+    private Float weight;
+    private Float muscleMass;
+    private Float fatMass;
+
+}
