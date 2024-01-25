@@ -1,11 +1,3 @@
-package com.ssafy.muscle_maker.dto.clubs.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@AllArgsConstructor
-@Getter
-public class ClubTransitRequest {
-    long clubId;
-    long userId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ac9d90e8ee162d015232c754a247fabec28fe17a956ffd1ad3f27d32852a81f
+size 232
