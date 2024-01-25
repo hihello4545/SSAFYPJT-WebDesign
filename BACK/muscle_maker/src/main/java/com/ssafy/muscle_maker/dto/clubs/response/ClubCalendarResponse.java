@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2f141bdb0a638940ecd31247aa5702afbbc7790054a8faab3135822e5d31e46
-size 371
+package com.ssafy.muscle_maker.dto.clubs.response;
+
+import com.ssafy.muscle_maker.dto.calendar.CalendarResponse;
+import lombok.*;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
+public class ClubCalendarResponse {
+    private  int exp;
+    private int completionPercent;
+    private int successDays;
+    private List<CalendarResponse> calendarResponses;
+}
