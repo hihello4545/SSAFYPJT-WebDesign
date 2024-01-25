@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96b382bb422bb7ce659e2b63254961304364667c1f226f3e37ee376eaf964177
-size 359
+package com.ssafy.muscle_maker.dto.individualGoals.request;
+
+
+import lombok.*;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
+public class IndividualGoalUpdateRequest {
+
+
+    private Long individualGoalId; // 개인목표 기본키 번호
+    private Long userId;
+    private double kg;
+    private double muscle;
+    private double fat;
+
+}
