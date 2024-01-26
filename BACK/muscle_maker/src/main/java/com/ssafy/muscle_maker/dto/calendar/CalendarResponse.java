@@ -1,15 +1,3 @@
-package com.ssafy.muscle_maker.dto.calendar;
-
-import lombok.*;
-
-import java.time.LocalDate;
-
-
-@Getter
-@Setter
-@AllArgsConstructor
-@Builder
-public class CalendarResponse {
-    private LocalDate date;
-    private int achievePercent;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2be6c5519f27e692094fc8c0e79eb4396fc98d80e1d425dec218323097c0c01c
+size 223
