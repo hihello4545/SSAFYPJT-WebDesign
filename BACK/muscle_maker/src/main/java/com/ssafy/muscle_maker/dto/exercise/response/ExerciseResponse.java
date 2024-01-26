@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c43aea7e993ee1c0b5754475fa6b3bb68b17f3731bddbb7636de03b670c7df0
-size 415
+package com.ssafy.muscle_maker.dto.exercise.response;
+
+import lombok.*;
+
+@AllArgsConstructor
+@Builder
+@Setter
+@Getter
+public class ExerciseResponse {
+
+    private Long exerciseId;
+
+    private String name; // 운동 명
+
+    private Long setTime; // 근력 : 세트 수, 유산소 : 분
+
+    private Long number; // 횟수
+
+    private boolean success; // 운동 성공 여부
+
+    private Long weight; //중량
+
+}
