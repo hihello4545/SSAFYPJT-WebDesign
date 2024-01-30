@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:689faac6ddf1d79773d512d79e3093ccf7d52ac41255caf0b6067f235797d478
-size 494
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.Favorite;
+import com.ssafy.muscle_maker.entity.Feed;
+import com.ssafy.muscle_maker.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface FavoriteRepository extends JpaRepository<Favorite, Long> {
+    boolean existsByUserAndFeed(User user, Feed feed);
+    Favorite findByUserAndFeed(User user, Feed feed);
+
+    List<Favorite> findByUser(User user);
+}
