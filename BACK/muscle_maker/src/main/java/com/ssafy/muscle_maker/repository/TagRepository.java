@@ -1,13 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.Tag;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-
-@Repository
-public interface TagRepository extends JpaRepository<Tag,Long> {
-    List<Tag>  findByTag(String tag);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9f8b2b81b604164b2a2ed7818504b30ddac17e74b9fc3ca46331b4d6a2c5083
+size 341

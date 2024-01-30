@@ -1,11 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.Basket;
-import com.ssafy.muscle_maker.entity.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface BasketRepository extends JpaRepository<Basket, Long> {
-    Basket findByUserAndFlagFalse(User user);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0a013e1dd0a31618f7c6ff5f76362623ffce20f39485806a7ca3a6dc0beb871
+size 377
