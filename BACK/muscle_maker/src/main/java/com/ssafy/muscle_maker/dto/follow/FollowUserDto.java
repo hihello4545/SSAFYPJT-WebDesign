@@ -1,11 +1,3 @@
-package com.ssafy.muscle_maker.dto.follow;
-
-import lombok.*;
-
-@Data
-@AllArgsConstructor
-@Builder
-public class FollowUserDto {
-    private long userId;
-    private String nickname;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:60b41d2fd7e002e566dcf48e203cad5b5d6e27215daa6e88a69b427fdb124984
+size 181

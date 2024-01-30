@@ -1,19 +1,3 @@
-package com.ssafy.muscle_maker.dto.inBody.response;
-
-import lombok.*;
-
-import java.time.LocalDateTime;
-
-@Data
-@AllArgsConstructor
-@Builder
-public class FindInBodyResponse {
-
-    private Long inBodyId;
-    private Float weight;
-    private Float muscleMass;
-    private Float fatMass;
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0413742339f28476f37d5f86737974d2e126558601c168c7f1cfa0615cc8f61
+size 364

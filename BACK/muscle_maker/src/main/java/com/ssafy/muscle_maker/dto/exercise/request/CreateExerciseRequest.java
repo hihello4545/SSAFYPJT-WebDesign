@@ -1,23 +1,3 @@
-package com.ssafy.muscle_maker.dto.exercise.request;
-
-import lombok.*;
-
-@AllArgsConstructor
-@Builder
-@Setter
-@Getter
-public class CreateExerciseRequest {
-
-    private String name; // 운동 명
-
-    private Long setTime; // 근력 : 세트 수, 유산소 : 분
-
-    private Long number; // 횟수
-
-    private boolean success; // 운동 성공 여부
-
-    private Long weight; //중량
-
-    private boolean type; // false 근력, true 유산소
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:80deffd07ef21ca97b232eba0a44fd54e4e27d35fc44daa2191c9aead012f82b
+size 445

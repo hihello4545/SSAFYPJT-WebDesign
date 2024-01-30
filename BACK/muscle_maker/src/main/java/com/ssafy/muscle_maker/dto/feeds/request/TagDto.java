@@ -1,24 +1,3 @@
-package com.ssafy.muscle_maker.dto.feeds.request;
-
-
-import com.ssafy.muscle_maker.entity.Tag;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class TagDto {
-
-    Long tagId;
-    String tag;
-
-    public Tag toEntity(TagDto tagDto){
-        return Tag.builder()
-                .tagId(this.tagId)
-                .tag(tag).build();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2eaa8b7ebbdb5be64b6163c574e65196607384470f191654d8caa5bb3b1e84f
+size 461
