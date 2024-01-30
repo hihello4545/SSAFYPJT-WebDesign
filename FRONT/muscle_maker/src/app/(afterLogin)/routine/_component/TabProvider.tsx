@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cfbf84fddf3a49c0455dea79999eebea4826f6b2d60eed509ddeed1d22b40ea
-size 462
+"use client"
+
+import { useState, createContext, ReactNode } from "react"
+import style from './tab.module.css'
+
+export const TabContext = createContext({
+  tab: 'rec',
+  setTab: (value: 'rec' | 'fol') => {},
+});
+
+type Props = { children: ReactNode };
+
+export default function TabProvider({ children }: Props) {
+  const [tab, setTab] = useState('rec');
+
+  return (
+    <TabContext.Provider value={{ tab, setTab }}>
+      {children}
+    </TabContext.Provider>
+  )
+}
