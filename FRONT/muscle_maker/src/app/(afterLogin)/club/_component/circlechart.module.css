@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5be078e714f15dee682cdc0efe248a60077542b2f8faf7009e276cf99aeddac
-size 423
+.box {
+  display: flex;
+  background-color: white;
+  margin: 10px;
+  width: 580px;
+  height: 260px;
+  border-color: rgb(113, 115, 115);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.innerbox {
+  margin: auto;
+  justify-content: center; /* 수평 정렬 */
+  align-items: center; /* 수직 정렬 */
+}
+
+.headtext {
+  text-align: center;
+}
+
+.pagebackgroundcolor {
+  background-color: rgb(118, 114, 114);
+  height: 100%;
+}

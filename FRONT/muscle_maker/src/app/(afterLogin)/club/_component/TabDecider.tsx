@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23ac3d965627da67f22bbddcba5453efe4ab04a705d71ccdfe12fb367cd343d1
-size 457
+"use client";
+
+import { useContext } from "react";
+import { TabContext } from "./TabProvider";
+import MemberPage from "./member";
+import FeedPage from "./Feed";
+import CircleChart from "./CircleChart";
+
+
+
+export default function TabDecider() {
+  const { tab } = useContext(TabContext);
+  if (tab === "home") {
+    return (
+      <>
+      <CircleChart/>
+      </>
+    )
+  }
+  else if (tab === 'mem') {
+    return <MemberPage />;
+  }
+  return <FeedPage />;
+}

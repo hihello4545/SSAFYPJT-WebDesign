@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:196d1353aeaed0dcf395989bebe26ab1259651f41d0e058ead417707dfd64d59
-size 300
+.box {
+  display: flex;
+  background-color: white;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  border-color: rgb(113, 115, 115);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.headtext {
+  text-align: center;
+}
+
+.pagebackgroundcolor {
+  background-color: rgb(118, 114, 114);
+  height: 100%;
+}
