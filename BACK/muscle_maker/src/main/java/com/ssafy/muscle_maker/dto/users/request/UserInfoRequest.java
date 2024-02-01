@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a05f001954bf015679709420cc10f7c2b6808e764865d7be4a24e7f023e71de
-size 432
+package com.ssafy.muscle_maker.dto.users.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.Setter;
+
+@Data
+@Setter
+@AllArgsConstructor
+@Builder
+public class UserInfoRequest {
+    private String nickname;
+    private Boolean gender;
+    private String name;
+    private String address;
+    private int height;
+    private int weight;
+    private int age;
+    private String image;
+}

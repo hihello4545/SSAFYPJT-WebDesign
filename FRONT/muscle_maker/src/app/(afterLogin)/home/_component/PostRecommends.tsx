@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:75c730bf34d515f19c26ef4e092622e3ec8c9081f0e7b7f16bbb76d653d4cfe7
-size 291
+"use client";
+// PostRecommends.js
+import React from 'react';
+import YourComponent from '../_lib/getPostRecommend';  // 경로에 맞게 수정
+
+
+
+export default function PostRecommends() {
+
+
+  return (
+    <div>
+      <h2>Post Recommendations</h2>
+      <YourComponent />
+    </div>
+  );
+}
