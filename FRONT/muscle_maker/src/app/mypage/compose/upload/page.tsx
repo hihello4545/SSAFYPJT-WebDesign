@@ -1,9 +1,9 @@
-import Home from "@/app/(afterLogin)/home/page";
+import Myfeed from "@/app/mypage/myfeed/page";
 
 export default function Page() {
   return (
     <>
-      <Home />
+      <Myfeed />
     </>
   );
 }
