@@ -1,12 +1,3 @@
-import {ReactNode} from "react";
-
-type Props = { children: ReactNode, modal: ReactNode };
-export default function Layout({children, modal}: Props) {
-  return (
-    <div>
-      비포 로그인 레이아웃////////////////////
-      {children}
-      {modal}
-    </div>
-  )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad8230b4fa87c8d907a8a77d5f69bae5761fbfde591f9e4e51a6ff50c4850c84
+size 217
