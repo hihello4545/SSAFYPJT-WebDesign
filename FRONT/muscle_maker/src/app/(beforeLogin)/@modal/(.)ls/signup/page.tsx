@@ -1,10 +1,3 @@
-import SignupModal from "@/app/(beforeLogin)/_component/SignupModal";
-
-export default function signup() {
-  return (
-    <>
-      회원가입 페러렐
-      <SignupModal />
-    </>
-  )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0a94c17531a6eb32cc1fb810b4f34fffc4272da6150a5f8986e266b391875c3
+size 188
