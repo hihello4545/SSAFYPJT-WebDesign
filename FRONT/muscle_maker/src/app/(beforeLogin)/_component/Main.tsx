@@ -1,17 +1,3 @@
-import style from '@/app/(beforeLogin)/_component/main.module.css';
-import Link from 'next/link';
-
-export default function Main() {
-  return (
-    <>
-      <div>
-        <h1>로그인하세요</h1>
-        <h2>지금 가입하세요</h2>
-        <Link href="/ls/signup">가입하기</Link>
-        <h3>이미 가입하셨나요?</h3>
-        <Link href="/ls/login">로그인</Link>
-      </div>
-    </>
-    
-  )
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7230a84073b71514be9ee50cc2a522d6bf9d2f6cff4bb283e7aeadf2d742560b
+size 266

@@ -1,15 +1,3 @@
-package com.ssafy.muscle_maker.dto.follow.request;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
-@AllArgsConstructor
-@Builder
-public class FollowRequest {
-    private long followerId;
-    private long followingId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:245862ac582243d0372f142cb7009d92257a05e51c6700ffb364890fd3caae69
+size 289

@@ -1,22 +1,3 @@
-package com.ssafy.muscle_maker.dto.routine.request;
-
-import jakarta.persistence.Column;
-import lombok.*;
-import org.hibernate.annotations.ColumnDefault;
-
-import java.time.LocalDateTime;
-
-@Data
-@AllArgsConstructor
-@Builder
-public class CreateRoutineRequest {
-
-    private String title;
-
-    private LocalDateTime date;
-
-    private Long whichDay; // 0 월, 1 화, 2 수, 3 목 ...
-
-    private Boolean settings;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d80ddc2192a632afbd785fac013c6c93cf24f5852e654591b8ad8475d6878499
+size 414
