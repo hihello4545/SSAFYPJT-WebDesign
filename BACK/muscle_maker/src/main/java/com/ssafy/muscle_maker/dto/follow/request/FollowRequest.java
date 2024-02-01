@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e9f6d0e5704c156217fea64e89034b23b1dbc7c78064cf8ae7d83f06fdf18c8
-size 287
+package com.ssafy.muscle_maker.dto.follow.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
+public class FollowRequest {
+    private int followerId;
+    private int followingId;
+}

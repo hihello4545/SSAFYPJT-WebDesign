@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b971d8c290965e6289add95e926876f31554f18fc7e9bceba2c02996bcb8d235
-size 458
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.Comment;
+import com.ssafy.muscle_maker.entity.Feed;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
+    Comment findByCommentId(int commentId);
+    List<Comment> findByFeedAndFlagFalse(Feed feed);
+}

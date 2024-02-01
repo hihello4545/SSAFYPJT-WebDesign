@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01e5258fc4e6365ef1c04ad1a5078082e8080695e69e11141dc708cf694d1b56
-size 80
+.pagebackgroundcolor {
+  background-color: rgb(0, 0, 0, 0.1);
+  height: 100%;
+}

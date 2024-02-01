@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b1090c3363c939b8163e8ac889e5a9e7854a73cd6f4b224d433b19a776e0f10e
-size 437
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.Calendar;
+import com.ssafy.muscle_maker.entity.Club;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+public interface CalendarRepository extends JpaRepository<Calendar, Integer> {
+    Calendar findCalendarByDateAndClubAndFlagFalse(LocalDate date, Club club);
+
+}

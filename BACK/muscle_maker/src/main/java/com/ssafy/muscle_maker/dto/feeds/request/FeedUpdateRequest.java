@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4157a41b409af86a3146e5534dabc0f0c95547b2dc2e690f8b5e7c93d6d77383
-size 418
+package com.ssafy.muscle_maker.dto.feeds.request;
+
+
+import lombok.*;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
+public class FeedUpdateRequest {
+
+    private  String Authorizaiton;
+    private String content;
+    private int feedId;
+    private int  clubId ;
+    private int userId;
+    private int visibility;
+    private String imgName;
+    private List<String> tags;
+}

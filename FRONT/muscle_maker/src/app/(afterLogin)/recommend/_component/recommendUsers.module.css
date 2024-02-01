@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e88a7a511fc228223ebf02cec085b41d78f9631761a28f60f2e655d6656c316
-size 422
+/* RecommendUsers.module.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.navcontainer, .container {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.emptybox, .emptygoal, .nickname, .handle, .followingCount, .followerCount, .goalDays {
+  padding: 8px;
+  text-align: center;
+}
+
+.profileImage {
+  border-radius: 30px; /* 원형 이미지를 위한 CSS */
+}
+
+/* 나머지 스타일을 여기에 추가하십시오. */
