@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b64f8917c9dab46a6ded9c23adbf54f303142da729eac2e98a04c21bcb0bc42b
-size 263
+package com.ssafy.muscle_maker.dto.routine.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@Builder
+public class CheckSuccessResponse {
+    private Long exerciseId;
+    private boolean success;
+}

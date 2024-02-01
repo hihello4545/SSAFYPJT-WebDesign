@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30b04f107710586eb4d86ae5ab07830655432d212ad717be1e99e109f5e029bb
-size 343
+.top {
+  margin-top: auto;
+}
+
+.weeklyCalendar {
+  text-align: center;
+}
+
+.daysContainer {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.day {
+  width: 50px; /* 날짜 간격을 조절하려면 적절한 너비를 설정하세요 */
+  height: 50px;
+  padding: 10px;
+}
+
+.today {
+  color: red;
+}
