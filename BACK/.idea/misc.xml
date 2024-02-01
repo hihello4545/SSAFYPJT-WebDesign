@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:06e7c7c1a729c1546dbdce413dbdbf3b61dcae3204916e9ad10c6ce8a4ae0701
-size 316
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
