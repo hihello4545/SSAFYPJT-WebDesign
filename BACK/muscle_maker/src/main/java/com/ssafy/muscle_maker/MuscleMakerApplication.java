@@ -1,17 +1,3 @@
-package com.ssafy.muscle_maker;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-import org.springframework.scheduling.annotation.EnableScheduling;
-
-@EnableJpaAuditing
-@EnableScheduling
-@SpringBootApplication
-public class MuscleMakerApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MuscleMakerApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8a1f6d8599d5b699e514521dbf8c453b1ed4aca9106579f74f710ee54d69817
+size 502

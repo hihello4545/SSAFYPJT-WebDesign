@@ -1,11 +1,3 @@
-.main {
-  width: 600px;
-  border-color: rgb(239, 243, 244);
-  border-right-width: 1px;
-  border-left-width: 1px;
-  border-right-style: solid;
-  border-left-style: solid;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:65f5c5c5eee4a43ad141b3627cc59640f63ac71d6e73a31b856fbae6c4bc9210
+size 239
