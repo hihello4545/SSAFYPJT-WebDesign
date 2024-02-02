@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb453c69e5b306afdf1bca3e3744ab01d0d4238120a02b3a7d51a82722b8ca1c
-size 465
+package com.ssafy.muscle_maker.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
+
+@Entity
+@Getter
+@Table(name = "tag")
+@Builder
+@ToString
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+public class Tag {
+
+    @Id @ GeneratedValue
+    @Column(name = "tag_id")
+    private int tagId;
+
+    @Column(unique = true)
+    private String tag;
+
+    @OneToMany (mappedBy = "tag")
+    private List<FeedTag> feedTags;
+
+
+
+}
+
