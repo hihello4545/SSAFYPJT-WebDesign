@@ -1,15 +1,3 @@
-"use client";
-
-import { useContext } from "react";
-import { TabContext } from "./TabProvider";
-import RecommendGroups from "./RecommendGroups";
-import RecommendUsers from "./RecommendUsers";
-
-
-export default function TabDecider() {
-  const { tab } = useContext(TabContext);
-  if (tab === "group") {
-    return <RecommendGroups/>;
-  }
-  return <RecommendUsers />;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:387da0a8923e6d77aa61a5e9791f8438243676dcc654015ec7d554a0eae3c00c
+size 365
