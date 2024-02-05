@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:597a0790cc9c61b28a6f1d6188a1c1016033ee04118371de7c405b005e9807cb
-size 55
+{
+  "extends": ["next/babel","next/core-web-vitals"]
+}

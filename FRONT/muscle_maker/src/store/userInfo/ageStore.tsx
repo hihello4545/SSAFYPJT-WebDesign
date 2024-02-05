@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:910955f56b85fc02fd27057f0ee8031a2d86035d3355308f619a857d0bd1fa1d
-size 335
+import {create} from 'zustand'
+
+interface age{
+    age : number | null
+    setAge : (age : string) => void
+}
+
+const ageStore = create<age>((set)=>({
+    age : null,
+    setAge : (age) => {
+        const parseAge = Number(age);
+
+        if(parseAge!=null){
+            set({age : parseAge})
+        }
+    }
+}))
+
+export default ageStore;
