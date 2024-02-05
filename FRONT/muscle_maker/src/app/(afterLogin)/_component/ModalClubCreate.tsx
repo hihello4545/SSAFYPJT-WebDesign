@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:148c3079a1122d6932ec332b86cac51b8b2627e1220be0258a15dc96b0a13d15
-size 284
+"use client";
+
+import { useState } from "react";
+import style from "./modalClubCreate.module.css";
+
+export default function ModalClubCreate() {
+  return (
+    <>
+      <div className={style.background}></div>
+      <div className={style.main}>모달창입니다.</div>
+    </>
+  );
+}

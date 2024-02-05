@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2d6bf9e1c13abc2be0a45babd1d12e33d02d2bda7d372709fb96a7308b82ff9
-size 392
+.main {
+  height: 2300px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartCover {
+  background-color: #ffffff;
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weightChart {
+  background-color: #ffffff;
+  width: 830px;
+}

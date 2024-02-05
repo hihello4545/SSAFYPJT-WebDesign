@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dcd8b01917431a4881dc26dd2d20abd3868971765cfab489e020f59a55688eab
-size 380
+import {create} from 'zustand'
+
+interface weight{
+    weight : number | null
+    setWeight : (weight : string) => void
+}
+
+const weightStore = create<weight>((set)=>({
+    weight : null,
+    setWeight : (weight) => {
+        const parseWeight = Number(weight);
+
+        if(parseWeight!=null){
+            set({weight : parseWeight})
+        }
+    }
+}))
+
+export default weightStore;
