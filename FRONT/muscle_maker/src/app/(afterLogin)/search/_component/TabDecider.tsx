@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73ab94adb3e8183783886cab46f8ecf451a68e54333478a848a2933c71e68376
-size 430
+"use client";
+
+import { useTab } from "./TabProvider";
+import SearchUser from "./SearchUser";
+import SearchClub from "./SearchClub";
+import SearchTag from "./SearchTag";
+
+export default function TabDecider() {
+  const { tab } = useTab();
+
+  switch (tab) {
+    case "club":
+      return <SearchClub />;
+    case "user":
+      return <SearchUser />;
+    case "tag":
+      return <SearchTag />;
+    default:
+      return null;
+  }
+}
