@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f324ed3d57af7cb80558bb480b2f4e71611b11016f040f61c567e4d1d9c92cbc
-size 458
+import apiInstance from "../utils/axios";
+
+const axios = apiInstance();
+
+export const inbody = {
+    /** 인바디 정보 등록     */
+    addInbody : (userId,request) => axios.post(`inbody?userId=${userId}`,request),
+
+
+    /** 인바디 정보 조회 */
+    getinbdoy : (userId) => axios.get(`inbody?userId=${userId}`),
+
+    /** 인바디 정보수정 */
+    modifyinbody : (inBodyId,request) => axios.put(`inbody?inBodyId=${inBodyId}`,request),
+
+    
+
+
+};
