@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b124dd474d3a14aa9abdb73017e7d4f21e42c69ec9e47591729610a0c7018459
-size 382
+// FollowStore.ts
+import create from 'zustand';
+
+type FollowStore = {
+  isFollowModalOpen: boolean;
+  openFollowModal: () => void;
+  closeFollowModal: () => void;
+};
+
+export const useFollowStore = create<FollowStore>((set) => ({
+  isFollowModalOpen: false,
+  openFollowModal: () => set({ isFollowModalOpen: true }),
+  closeFollowModal: () => set({ isFollowModalOpen: false }),
+}));
