@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20bc650a28549f595f0bab47845f74b7be687c53ce0d31a09948f84dde7ace29
-size 358
+package com.ssafy.muscle_maker.dto.notification;
+
+import com.ssafy.muscle_maker.entity.NotificationType;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class NotificationDto {
+    private int notificationId;
+    private String message;
+    private Boolean isRead;
+    private NotificationType notificationType;
+    private int senderId;
+}

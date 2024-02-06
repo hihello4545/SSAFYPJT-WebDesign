@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4006e582eb0ab9cf355224012daa434083ea9dd72629239cf94d043e68a4e551
-size 447
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.Notification;
+import com.ssafy.muscle_maker.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface NotificationRepository extends JpaRepository<Notification, Integer> {
+    boolean existsByReceiverIdAndIsReadFalse(int receiverId);
+    List<Notification> findByReceiverIdAndIsReadFalse(int receiverId);
+}
