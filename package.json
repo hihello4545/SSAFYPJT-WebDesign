@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ac159d44cc1be5bcead4763294069637cfd5ff669bf609828129f6a4b6c811a
-size 90
+{
+  "dependencies": {
+    "@auth/core": "^0.25.1",
+    "next-auth": "^5.0.0-beta.5"
+  }
+}
