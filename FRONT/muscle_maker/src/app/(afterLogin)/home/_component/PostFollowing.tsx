@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ae49da7e9d9c3f013e8b10f9b18bee484996997c26557ba61a39e2fd86802d5
-size 393
+"use client";
+import YourComponent from '../_lib/getPostFollowing';
+import Post from "@/app/(afterLogin)/_component/Post";
+import { ReactNode } from "react";
+
+type Props = { params: any; modal: ReactNode };
+
+const YourContainer: React.FC<Props> = ({ params, modal }) => {
+  return (
+    <div>
+      <h2>Following </h2>
+      <YourComponent />
+    </div>
+  );
+};
+
+export default YourContainer;
