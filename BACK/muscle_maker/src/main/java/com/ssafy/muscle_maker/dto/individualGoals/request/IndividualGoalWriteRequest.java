@@ -1,18 +1,3 @@
-package com.ssafy.muscle_maker.dto.individualGoals.request;
-
-
-import lombok.*;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
-@Builder
-public class IndividualGoalWriteRequest {
-
-    private  int userId;
-    private double kg;
-    private double muscle;
-    private double fat;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:119e5f73400b523bfa1682b05330e8f06931ce081ee7ef40c9f6e7d2f764fc3c
+size 290
