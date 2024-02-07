@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4935ee5f7be6c5a930ac84b2a046d1433c6cabd433a9e5270f757fae7df1821c
-size 444
+package com.ssafy.muscle_maker.repository;
+
+import com.ssafy.muscle_maker.entity.IndividualGoal;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IndividualGoalRepository extends JpaRepository<IndividualGoal,Integer> {
+
+
+}
+
