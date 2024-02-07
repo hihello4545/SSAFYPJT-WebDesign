@@ -1,18 +1,21 @@
-"use client";
+"use client"
 
-import { createContext, useState, ReactNode } from "react";
+import { useState, createContext, ReactNode } from "react"
+import style from './tab.module.css'
 
 export const TabContext = createContext({
-  tab: "diet",
-  setTab: (value: "diet" | "exercise" | "all") => {},
+  tab: "week",
+  setTab: (value: "week" | "month" | "set") => {},
 });
 
 type Props = { children: ReactNode };
+
 export default function TabProvider({ children }: Props) {
-  const [tab, setTab] = useState("diet");
+  const [tab, setTab] = useState('week');
+
   return (
     <TabContext.Provider value={{ tab, setTab }}>
       {children}
     </TabContext.Provider>
-  );
+  )
 }
