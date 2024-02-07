@@ -1,20 +1,3 @@
-"use client";
-
-import { useContext } from "react";
-import { TabContext } from "./TabProvider";
-import MonthCalendar from "./MonthCalendar";
-import dayjs from "dayjs";
-import style from './tab.module.css'
-import WeeklyComponent from "./WeeklyCalendar";
-
-
-
-const today = dayjs().format('YYYY-MM-DD'); 
-
-export default function TabDecider() {
-  const { tab } = useContext(TabContext);
-  if (tab === "rec") {
-    return <WeeklyComponent/>;
-  }
-  return <MonthCalendar />;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4d6771aeeb33f223f7bec00ed20e4c84f188120293cf9ea618d8c8f63022db8
+size 462
