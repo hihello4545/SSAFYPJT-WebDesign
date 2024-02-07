@@ -1,17 +1,3 @@
-import apiInstance from '../utils/axios';
-
-const axios = apiInstance();
-
-
-export const follows = {
-
-    /**  팔로잉 요청*/
-    applyFollow : (followRequest) => axios.post(`follows`, followRequest),
-
-    /** 팔로잉 취소 */
-    cancelFollow : (followerId,followingId) => axios.delete(`follows?
-                    followerId=${followerId}&followingId=${followingId}`),
-    /** 팔로우 목록 조회*/
-    getFollowList : (userId) => axios.get(`follows?userId=${userId}&sortType=0`),
-
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:e545628974a956d6c00b1ddf262c459199394dda9831331942a7595aa0cb8ce5
+size 496
