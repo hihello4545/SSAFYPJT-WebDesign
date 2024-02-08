@@ -1,22 +1,3 @@
-// import axios
-import axios from "axios";
-// 전역 설정
-axios.defaults.withCredentials = true; // 쿠키 데이터를 전송받기 위해
-
-
-const multiApi = () => {
-    const token = localStorage.getItem('token');
-  
-    const instance = axios.create({
-      baseURL: 'http://localhost:8080/',
-      
-      // baseURL: "https://back.muscle-maker.site/",
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    });
-  
-    return instance;
-  };
-
-  export default multiApi ;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c701c10c578b5023960984b58e704742a2e50c9e6fc523015d280b0573518e80
+size 500

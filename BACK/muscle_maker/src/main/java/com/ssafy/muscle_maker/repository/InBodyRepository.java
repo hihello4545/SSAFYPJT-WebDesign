@@ -1,10 +1,3 @@
-package com.ssafy.muscle_maker.repository;
-
-import com.ssafy.muscle_maker.entity.InBody;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface InBodyRepository extends JpaRepository<InBody, Integer> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:398a71c107e3ff78a695f6c3e682981d0dc300173fe82b370eea469c0dda20c9
+size 292
