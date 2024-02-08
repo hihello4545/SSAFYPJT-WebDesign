@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb3ecfcedf42f139344c8a41d86bbcb745105103469028d59c5b5f68feefb227
-size 49
+{
+  "presets": ["next/babel"],
+  "plugins": []
+}
