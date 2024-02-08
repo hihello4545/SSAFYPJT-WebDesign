@@ -1,18 +1,3 @@
-// stores/FollowModalStore.ts
-import create from 'zustand';
-
-// 상태와 액션들에 대한 인터페이스 정의
-interface FollowModalState {
-  showModal: boolean;
-  openModal: () => void;
-  closeModal: () => void;
-}
-
-// Store 생성
-const useFollowModalStore = create<FollowModalState>((set) => ({
-  showModal: false,
-  openModal: () => set({ showModal: true }),
-  closeModal: () => set({ showModal: false }),
-}));
-
-export default useFollowModalStore;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1737bb2afb3d2445b2bdf6e42500b0d3e518df04e7bd0ef025da5b7b5501849d
+size 461
