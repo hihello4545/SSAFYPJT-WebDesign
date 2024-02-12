@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cfcdd6bf763b156b49ecfbeac48bddd680b80250ca7ca742967eeb44abde9103
-size 323
+"use client";
+
+import React, { useState, useEffect } from "react";
+import AddExerciseForm from "./AddExerciseForm";
+import WeekRoutines from "./WeekRoutines";
+
+
+export default function RoutinesPage() {
+  return (
+    <div>
+      <AddExerciseForm/>
+      <h1>내 루틴 관리</h1>
+      <WeekRoutines />
+    </div>
+  );
+
+}
