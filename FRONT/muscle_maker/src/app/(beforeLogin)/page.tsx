@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e090c3972c6c128602f72b8f467825087a56824cfe7cd58069e1474772a7a05b
-size 277
+import { Suspense } from "react";
+import Main from "@/app/(beforeLogin)/_component/Main";
+import LoginModal from "./_component/LoginModal";
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginModal />
+    </Suspense>
+  );
+}
