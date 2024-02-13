@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3679dfa08bb3416562a55b4bcc6ef400c756876ec4f49fb1917a9b3b78168082
-size 470
+.main {
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.main img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.content {
+  margin-left: 20px;
+  width: 400px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: rgb(29, 155, 240);
+}
+
+.FollowBtn {
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(29, 155, 240);
+}
