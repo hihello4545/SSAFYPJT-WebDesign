@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f53d998dcc2abcb985e3402bba8ee479e3f8a3d82bb50d510c17b4c3ea5911b5
-size 284
+"use client";
+import YourComponent from "../_lib/getPostRecommend";
+import Post from "@/app/(afterLogin)/_component/Post";
+import { ReactNode } from "react";
+
+const YourContainer = () => {
+  return (
+    <div>
+      <YourComponent />
+    </div>
+  );
+};
+
+export default YourContainer;
