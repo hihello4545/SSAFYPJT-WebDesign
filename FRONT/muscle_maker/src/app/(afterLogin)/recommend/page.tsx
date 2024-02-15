@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4509ff8030f41b554ae72f5cbc216ae72c8e6e0e72348d7545a6a0d89712cdb6
-size 475
+import Tab from "./_component/Tab";
+import TabProvider from "./_component/TabProvider";
+import TabDecider from "./_component/TabDecider";
+import style from "@/app/(afterLogin)/recommend/recommend.module.css";
+
+export default function MyFeed() {
+  return (
+    <>
+    <div className={style.pagebackgroundcolor}>
+      <TabProvider>
+        <Tab/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <TabDecider/>
+      </TabProvider>
+    </div>
+    </>
+  );
+}
