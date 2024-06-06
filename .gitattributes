@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:190b7d47a306d19f112a03182a5f90ec1038c418e5d06d7be13d2858c4308d6f
-size 143
+*.tsx linguist-detectable=false
