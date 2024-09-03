@@ -197,7 +197,7 @@
         <a href="https://github.com/JongJae2">
             <img src="https://avatars.githubusercontent.com/u/149658209?v=4" width="100px;" alt="팀원"/>
             <br />
-            <sub><b>이종재</b></sub>
+            <sub><b></b></sub>
         </a>
         <br />
         <div>BE,FE</div>
